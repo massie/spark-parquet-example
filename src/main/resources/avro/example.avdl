@@ -1,0 +1,20 @@
+@namespace("com.zenfractal")
+protocol SparkParquetAvro {
+
+enum AminoAcidType {
+	ALIPHATIC,
+	HYDROXYL,
+	CYCLIC,
+	AROMATIC,
+	BASIC,
+	ACIDIC
+}
+
+record AminoAcid {
+ 	AminoAcidType type;
+	string fullName;
+	string abbreviation;
+	float molecularWeight;
+}
+
+}
